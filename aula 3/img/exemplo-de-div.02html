@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Exemplo div</title>
+</head>
+<body>
+    <div id="pricipal">
+         Esta é a primeira linha.
+         <br>
+         Esata é a segunda linha.
+    </div>
+    <hr/>
+     <div id="secundaria">
+          Esta é outra divisão de pagina.
+          <br>
+          aqui começa uma nova linha
+     </div>
+</body>
+</html>
