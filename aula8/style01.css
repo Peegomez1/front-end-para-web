@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+}
+  body {
+      margin: 0;
+      background-color: rgb(243, 243, 243);
+      color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif;
+}
+
+   /*Organização geral da pagina */
+
+.layout-pagina {
+      display: grid;
+
+      grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer"
+      ;
+
+      grid-template-columns: 220px 1fr;
+      grid-template-rows: auto 1fr auto;
+
+      min-height:100vh;
+}
+
+   /* Cabeçalho */
+
+   .cabeçalho {
+         grid-area: header;
+
+         background-color: rgb(114, 4, 4);
+         color: white;
+         padding: 25px;
+         text-align: center;
+}
+
+
+
+.cabeçalho h1 {
+     margin: 0 0 10px;
+}
+
+
+.cabeçalho p {
+    margin: 0;
+}
+ 
+/*Menu Lateral*/
+
+
+.barra-lateral h2 {
+  color: rgb(99, 0, 0);
+
+}
+.barra-lateral ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.barra-lateral h1{
+      margin-bottom: 10px;
+    }
+.barra-lateral a{
+    display: block;
+    background-color: rgb(92, 8, 8);
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    text-decoration: none;
+}
+  .barra-lateral a:hover {
+    background-color:darkred;
+  }
+  /*Conteudo Principal*/
+
+  .conteudo-pricipal {
+    grid-area: main;
+    padding: 30px;
+}
+
+.conteudo-pricipal h2{
+    margin-top: 0;
+    color: darkred;
+
+}
+
+.grid-pricipal {
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+gap: 2rem;
+
+}
+
+/*Cards*/
+
+.card{
+    background-color: darkred;
+    padding: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px white;
+}
+
+.card h3{
+    margin-top: 0;
+    color: darkred;
+
+}
+
+.card p{
+    line-height: 1.6;
+}
+
+.card a{
+    display: incline-block;
+    background-color: darkred;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+ 
+.card a:hover{
+    background-color: darkred;
+}
